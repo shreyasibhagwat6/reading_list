@@ -1,6 +1,7 @@
 {
   "name": "reading_list",
   "version": "0.1.0",
+  "homepage": "http://shreyasibhagwat6.github.io/reading_list",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -14,6 +15,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "server": "json-server -p 3001 --watch db.json",
     "build": "react-scripts build",
@@ -37,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
